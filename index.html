@@ -45,13 +45,13 @@
         .service-list li::before { content: '\F633'; font-family: 'bootstrap-icons'; position: absolute; left: 0; color: var(--accent-gold); font-weight: bold; }
 
         /* Galería Estilos */
-        .project-item { position: relative; border-radius: 8px; overflow: hidden; height: 300px; }
+        .project-item { position: relative; border-radius: 8px; overflow: hidden; height: 280px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
         .project-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
         .project-overlay {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(26, 26, 26, 0.8); color: var(--accent-gold);
+            background: rgba(26, 26, 26, 0.85); color: var(--accent-gold);
             display: flex; flex-direction: column; align-items: center; justify-content: center;
-            opacity: 0; transition: 0.4s;
+            opacity: 0; transition: 0.4s; padding: 20px; text-align: center;
         }
         .project-item:hover .project-overlay { opacity: 1; }
         .project-item:hover img { transform: scale(1.1); }
@@ -166,34 +166,55 @@
 
     <section id="proyectos" class="py-5">
         <div class="container text-center">
-            <h2 class="section-title">Galería de Proyectos</h2>
-            <p class="lead text-muted mb-5">Visualice la ejecución técnica en nuestras obras recientes.</p>
-            <div class="row g-4">
+            <h2 class="section-title">Nuestra Cartera de Proyectos</h2>
+            <p class="lead text-muted mb-5">Registro visual de ejecución bajo estándares de ingeniería.</p>
+            
+            <div class="row g-4 text-start">
                 <div class="col-md-4">
+                    <h4 class="mb-4 accent-text text-center border-bottom pb-2">Obra Gruesa</h4>
                     <div class="project-item">
-                        <img src="https://images.unsplash.com/photo-1541913057-3665792965f7?q=80&w=800" alt="Obra Gruesa">
-                        <div class="project-overlay">
-                            <h4 class="fw-bold">Obra Gruesa</h4>
-                            <p class="small">Santiago, RM</p>
-                        </div>
+                        <img src="obra-gruesa/foto_1.jpg" alt="Obra Gruesa Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Estructuras</h5><p class="small">Montaje y Rigidez</p></div>
+                    </div>
+                    <div class="project-item">
+                        <img src="obra-gruesa/foto_2.jpg" alt="Obra Gruesa Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Hormigón</h5><p class="small">Fundaciones Técnicas</p></div>
+                    </div>
+                    <div class="project-item">
+                        <img src="obra-gruesa/foto_3.jpg" alt="Obra Gruesa Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Techumbres</h5><p class="small">Estructura Superior</p></div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
+                    <h4 class="mb-4 accent-text text-center border-bottom pb-2">Obra Fina</h4>
                     <div class="project-item">
-                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800" alt="Terminaciones">
-                        <div class="project-overlay">
-                            <h4 class="fw-bold">Terminaciones</h4>
-                            <p class="small">Acabados de Lujo</p>
-                        </div>
+                        <img src="obra-fina/foto_1.jpg" alt="Obra Fina Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Terminaciones</h5><p class="small">Pisos Vinílicos</p></div>
+                    </div>
+                    <div class="project-item">
+                        <img src="obra-fina/foto_2.jpg" alt="Obra Fina Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Acabados</h5><p class="small">Detalle en Obra</p></div>
+                    </div>
+                    <div class="project-item">
+                        <img src="obra-fina/foto_3.jpg" alt="Obra Fina Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Pintura</h5><p class="small">Nivelado y Color</p></div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
+                    <h4 class="mb-4 accent-text text-center border-bottom pb-2">Ventanería</h4>
                     <div class="project-item">
-                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800" alt="Ventanería">
-                        <div class="project-overlay">
-                            <h4 class="fw-bold">Ventanería</h4>
-                            <p class="small">Termopanel DVH</p>
-                        </div>
+                        <img src="trabajo-ventanas/foto_1.jpg" alt="Ventanas Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Instalación</h5><p class="small">Termopanel DVH</p></div>
+                    </div>
+                    <div class="project-item">
+                        <img src="trabajo-ventanas/foto_2.jpg" alt="Ventanas Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">PVC / Aluminio</h5><p class="small">Eficiencia Térmica</p></div>
+                    </div>
+                    <div class="project-item">
+                        <img src="trabajo-ventanas/foto_3.jpg" alt="Ventanas Madelma">
+                        <div class="project-overlay"><h5 class="fw-bold">Cierres</h5><p class="small">Cristal Templado</p></div>
                     </div>
                 </div>
             </div>
